@@ -1,30 +1,28 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>//<<-- This show that what will it show first
+import { ref } from 'vue'//<<-- Only function ref from vie
+
+const counter = ref(0) //<<-- counter contain variable of 0
+
+const message = "Boss"
 </script>
+<!--===== Script Zone =-->
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    Counter {{ counter }}
   </div>
-  <HelloWorld msg="Vite + Vue" />
+
+  <div class="hello">
+    Hello {{ message }}
+    Hello {{ message }}
+  </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+<!--===== CSS Zone =-->
+<style>
+.hello {
+  background-color: blue;
+  color: aqua;
 }
 </style>
