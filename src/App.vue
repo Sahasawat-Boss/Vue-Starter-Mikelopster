@@ -1,18 +1,16 @@
 <script setup>
-//<<-- This show that what will it show first
-import { reactive } from "vue";
-
-const state = reactive({ count: 0 });
-
-const increment = () => {
-  state.count++;
-};
+import VElseIf from "./components/v-condition/VElseIf.vue";
 </script>
-<!--===== Script Zone =-->
+
 <template>
-  <button @click="increment">Click to increment</button>
-  {{ state.count }}
+  <main class="Padding">
+    <h2>Test Comps</h2>
+    <VElseIf />
+  </main>
 </template>
 
-<!--===== CSS Zone =-->
-<style></style>
+<style scoped>
+.Padding{
+  padding-left: 50px;
+}
+</style>
