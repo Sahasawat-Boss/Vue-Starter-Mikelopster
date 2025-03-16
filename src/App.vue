@@ -1,16 +1,24 @@
 <script setup>
-import VElseIf from "./components/v-condition/VElseIf.vue";
+import Form from './components/Form.vue';
 </script>
 
 <template>
-  <main class="Padding">
-    <h2>Test Comps</h2>
-    <VElseIf />
+  <main class="Main">
+    <h2 class="Head">Test Comps</h2>
+    <Form />
   </main>
 </template>
 
 <style scoped>
-.Padding{
-  padding-left: 50px;
+.Main{
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  height: fit-content;
 }
+
+.Head{
+  color: aquamarine;
+}
+
 </style>
