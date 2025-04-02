@@ -1,11 +1,11 @@
 <script setup>
-import Form from './components/Form.vue';
+import Reactive from './components/Databinding/Reactive.vue';
 </script>
 
 <template>
   <main class="Main">
-    <h2 class="Head">Test Comps</h2>
-    <Form />
+    <h2 class="Head">Main</h2>
+    <Reactive />
   </main>
 </template>
 
