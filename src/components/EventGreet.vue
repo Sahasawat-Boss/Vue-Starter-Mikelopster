@@ -1,17 +1,14 @@
 <script setup>
-import { ref } from "vue"; // Import ref
-const name = ref("Vue.js");
+import { ref } from 'vue'
+const name = ref('')
 
-const greet = (event) => {
-  console.log("event", event);
-  alert(`Hello ${name.value}!`);
-  // `event` is the native DOM event
-  if (event) {
-    alert(event.target.tagName);
-  }
-};
+const onInput = (event) => {
+  name.value = event.target.value
+}
 </script>
-
 <template>
-  <button @click="greet">Greet</button>
+  <div>
+    <input type="text" :value="name" @input="onInput">
+    <p>Hello, {{ name }}!</p>
+  </div>
 </template>

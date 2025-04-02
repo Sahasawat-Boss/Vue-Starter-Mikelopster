@@ -24,3 +24,4 @@ Reactive > Ref make it easier
 ทั้วไปใช้ Ref
 
 Object ใหญ่ๆใช้ Reative
+- Better Manage Big Object

@@ -1,3 +1,4 @@
+<!-- - ผูก State ตัวแปลเข้ากับ Html Tag -->
 <script setup>
 import { ref } from "vue";
 
@@ -5,8 +6,9 @@ const searchText = ref("");
 </script>
 
 <template>
-  <h2>V-Model Comps Test</h2>
-  <input v-model="searchText" />
-  <br>
-  <div>{{ searchText }}</div>
+  <div>
+    <h2>V-Model Comps Test</h2>
+    <div>Search:{{ searchText }}</div>
+    <input v-model="searchText" />
+  </div>
 </template>

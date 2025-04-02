@@ -1,11 +1,11 @@
 <script setup>
-import Reactive from './components/Databinding/Reactive.vue';
+import VIf from './components/v-condition/VIf.vue';
 </script>
 
 <template>
   <main class="Main">
     <h2 class="Head">Main</h2>
-    <Reactive />
+    <VIf />
   </main>
 </template>
 
