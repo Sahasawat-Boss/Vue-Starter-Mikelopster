@@ -1,11 +1,11 @@
 <script setup>
-import VIf from './components/v-condition/VIf.vue';
+import VFor from './components/v-condition/VFor.vue';
 </script>
 
 <template>
   <main class="Main">
     <h2 class="Head">Main</h2>
-    <VIf />
+    <VFor />
   </main>
 </template>
 
