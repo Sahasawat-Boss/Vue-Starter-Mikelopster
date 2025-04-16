@@ -5,6 +5,7 @@ const lastName = ref('')
 const fullName = computed(() => {
     return `${firstName.value} ${lastName.value}`
 })
+// Compute
 </script>
 
 <template>
